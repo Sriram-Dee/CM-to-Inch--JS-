@@ -7,7 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color:rgb(108, 248, 253) ;
+    background-color:rgb(132, 132, 132) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,24 +16,31 @@ body {
 .container{
     height: 300px;
     width: 250px;
-    background-color: darkslategrey;
+    background-color: rgba(47, 79, 79, 0.264);
+    backdrop-filter: blur(20px);
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* box-shadow:  -5px -5px 10px #fff, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow:  -3px -3px 5px #c4c4c4, 3px 3px 5px #333;
    
 }
 
 .container h1 {
     color: rgb(255, 255, 255);
-    padding: 40px 0px 20px 0px;
+    text-shadow: #333 5px 5px 8px;
 }
 input{
-    font-size: 12px;
+    font-size: 1.2rem;
     width: 150px;
-    height: 25px;
+    height: 35px;
     text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbfbfb;
 }
 
 button{
@@ -45,6 +52,7 @@ button{
     border: none;
     outline: none;
     border-radius: 10px;
+    transition: all .5s ease;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 button:hover{
@@ -56,4 +64,7 @@ span{
     font-size: 20px;
     font-weight: 900;
     font-family: sans-serif;
+    width: 100%;
+    height: 30px;
+    text-align: center;
 }
